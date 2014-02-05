@@ -12,6 +12,11 @@
 # end
 
 ###
+# Live reload
+###
+activate :livereload
+
+###
 # Page options, layouts, aliases and proxies
 ###
 
