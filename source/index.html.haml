@@ -1,9 +1,153 @@
 ---
-title: Middleman is Watching
+title: Jottly Landing page
 body_class: index
 ---
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+%header#page-header
+  .container.animated.fadeInDown
+    .three.columns
+      .logo
+        %a{:href => ""}
+          %img{:src => "images/logo.png", :alt => "logo"}/
+    .thirteen.columns
+      %nav
+        %ul
+          %li
+            %a{:href => ""} Sign in
+            %a.btn{:href => ""} Sign up
+  .container
+    .sixteen.columns.headertext.animated.fadeInDown
+      %h1 An easier foobar
+      %p
+        Put down the pen and paper.  Jottly helps you organize your
+        = succeed "." do
+          %strong life, home and office
+      .container
+        .row
+          // alpha removes padding and margin from left side
+          .six.columns.alpha
+            %input{:type => "email", :placeholder => "Enter your email address"}/
+          // omega removes padding and margin from right side
+          .five.columns.omega
+            %button{:type => 'submit'} Sign up now
+
+  #benefits
+    .container
+      .twelve.columns.offset-by-two
+        %h2 What is Jott.ly exactly?
+        %p Our web application allows you to create documents with real-time editing and collaborating capabilities, while storing content and information to share with others.
+        .twelve.columns
+          // note scale-with-grid class...cool
+          %img{:class => 'scale-with-grid', :src => "images/app.png", :alt => "jottly's Web App"}/
+
+  #pricing
+    .container
+      .twelve.columns.offset-by-two
+        %h2 How much will it cost?
+        %p It’s rather inexpensive to use Jott.ly’s suite of tools compared to several other services out there. We have several options to fit your budget and needs:
+      .one-third.column
+        .pricebox
+          %header
+            %h3 Individuals &amp; Family
+          %section
+            %h4
+              %span $
+              2
+            %p per month<br /> / per user
+            %ul
+              %li Unlimited notes
+              %li Unlimited members
+              %li
+                %strong 2 GB
+                of storage!
+            %button Select this plan
+      .one-third.column
+        %div.pricebox.deal
+          %header
+            %h3 Small biz
+          %section
+            %h4
+              %span $
+              5
+ 
+            %p per month<br /> / per user
+            %ul
+              %li Unlimited notes
+              %li Unlimited members
+              %li
+                %strong 15 GB
+                of storage!
+            %button Select this plan
+      .one-third.column
+        %div.pricebox
+          %header
+            %h3 Enterprise
+          %section
+            %h4
+              %span $
+              8
+            %p per month<br /> / per user
+            %ul
+              %li Unlimited notes
+              %li Unlimited members
+              %li
+                %strong Unlimited
+                storage!
+            %button Select this plan
+
+  #testimonials
+    .container
+      .twelve.columns.offset-by-two
+        %h2 Who use it?
+        %p Jott.ly has around 150,000 satisfied customers sharing and collaborating with teams throughout 35 countries. Here’s what a few had to say:
+      .one-third.column
+        %blockquote
+          Pork beef short ribs brisket strip steak tenderloin. Tongue sirloin chuck, beef ribs t-bone pork loin tri-tip beef jerky meatloaf rump pork chop corned beef fatback. Sausage tongue pork belly venison, bacon pork jowl pastrami sirloin brisket rump salami. Chicken pig rump, tail shankle boudin ground round ham hock tri-tip leberkas speck turkey t-bone strip steak. Frankfurter shank turducken sausage, kielbasa boudin prosciutto tri-tip meatloaf chicken jowl salami pig.
+        .avatar
+          %img{:src => "images/avatar1.jpg", :alt => "Danny S avatar"}/
+          %p Danny S.
+        
+      .one-third.column
+        %blockquote
+          Pastrami brisket tri-tip biltong tenderloin chicken. Sirloin venison pork loin boudin, ground round ribeye kielbasa frankfurter speck meatball spare ribs ham. Meatball short ribs strip steak, pork chop tri-tip meatloaf frankfurter pork belly jerky capicola ground round. Pork belly filet mignon frankfurter, sausage jowl chicken capicola brisket andouille speck boudin cow pastrami prosciutto t-bone. Sausage tenderloin drumstick filet mignon, pastrami frankfurter.
+        .avatar
+          %img{:src => "images/avatar2.jpg", :alt => "Jon M avatar"}/
+          %p Jon M. 
+        
+      .one-third.column
+        %blockquote
+          Salami speck bresaola, shank filet mignon tri-tip prosciutto shoulder ham hock meatball frankfurter capicola tail. Drumstick turducken fatback ham. Prosciutto sausage jerky short loin turducken. Speck pork chop capicola turkey meatloaf. Cow shank sirloin capicola, tongue salami speck tail leberkas brisket corned beef jowl fatback t-bone. Hamburger andouille bacon short loin. Kielbasa jerky jowl sirloin prosciutto.      .avatar
+        .avatar
+          %img{:src => "images/avatar3.jpg", :alt => "chloe p avatar"}/
+          %p Danny S.
+
+  %section#action
+    .container
+      .twelve.columns.offset-by-two
+        %h2 Give it a try before you commit.
+        %p You can test drive Jott.ly before deciding on one of our plans. Just give us your email address, and we'll send you the details:
+        .container
+          .row
+            .eight.columns.alpha
+              %input.email{:type => "email", :placeholder => 'Enter your email address'}/
+            .four.columns.omega
+              %button.submit{:type => 'submit'} Sign up now!
+
+  
+  %footer
+    .container
+      .twelve.columns
+        %nav
+          %ul
+            %li
+              %a{:href => ""} About
+            %li
+              %a{:href => ""} Contact
+            %li
+              %a{:href => ""} Privacy policy
+            %li 
+              %a{:href => ""} Termsk
+      .two.columns
+        %img{:src => "images/small_logo.png", :alt => "company logo"}/
+      .two.columns
+        %p &copy; 2014.  Jott.ly.  All rights reserved
